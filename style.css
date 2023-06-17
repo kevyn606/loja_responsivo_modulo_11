@@ -1,0 +1,255 @@
+*{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    background-color:#7E563C ;
+}
+
+.header-{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   gap: 78px;
+   padding: 20px 0;
+}
+
+header h1{
+font-weight: 900;
+color: white;
+}
+
+header li {
+    display: inline;
+    list-style: none;
+    padding-left: 30px;
+    text-transform: uppercase;
+}
+
+header li a{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+main{
+    margin: 0 auto;
+}
+.sobre{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2%;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.sobre h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: #7E563C;
+    margin: 40px 0;
+    font-size: 2em;
+}
+.sobre-conteudo {
+   display: flex;
+   gap: 20px;
+}
+.sobre-conteudo img{
+    width: 100%;
+    border-radius: 20px;
+}
+.sobre-conteudo h3{
+    color: darkgray;
+    text-align: justify;
+    font-size: 1.6em;
+    font-weight: lighter;
+}
+
+
+
+.produtos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2%;
+    width: 70%;
+    margin: 0 auto;
+}
+.titulo{
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(126, 86, 60);
+    margin: 50px 0;
+    font-size: 2em;
+}
+
+.sobre-conteudo-img{
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 25em;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+ }
+
+ .sobre-conteudo-img img{
+    width: 220%;
+    
+    
+    
+ }
+ .produtos-conteudo{
+    position: relative;
+ }
+
+ .produtos-conteudo h3{
+
+background: rgba(255, 255, 255, 0.52);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.2px);
+-webkit-backdrop-filter: blur(8.2px);
+padding: 0.7em;
+border-radius: 20px;
+width: 14em;
+color: rgb(126, 86, 60);
+font-size: 1em;
+text-align: center;
+position: absolute;
+top: 65%;
+left: 50%;
+transform: translateX(-50%);
+ }
+
+ .produtos-conteudo h4{
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1em;
+ }
+
+
+ .produtos-conteudo button{
+    width: 90%;
+    border-radius: 20px;
+    padding: 0.5em;
+    border: none;
+    background-color:#523320;
+    font-size: 1em;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    cursor: pointer;
+ }
+
+ .produtos-conteudo button:hover{
+    background: rgba(255, 255, 255, 0.52);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.2px);
+    color: #523320;
+    
+ }
+.fundo{
+    
+    background: linear-gradient(360deg, rgb(126, 86, 60) 0%, rgb(126, 86, 60) 50%, rgb(255, 255, 255) 50%,rgb(255, 255, 255) 100%);
+
+ }
+
+footer{
+    background-color: rgb(126, 86, 60);
+    height:7em;
+}
+
+@media screen and (max-width:767px){
+    .header-{
+        gap: 2em;
+       justify-content: space-between;
+       padding: 2em;
+        
+    }
+
+    main{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .sobre{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .sobre-conteudo h3{
+        color: darkgray;
+        text-align: justify;
+        font-size: 1em;
+        font-weight: lighter;
+        padding-top: 2em;
+    }
+    .produtos{
+        display: block;
+        width: 90%;}
+    .produtos-conteudo{
+        margin-bottom: 7em;
+    }
+    .produtos-conteudo h4{
+        color: #523320;
+    }
+    
+    .fundo{
+        background: none;
+     }
+     footer{
+        background-color: white;
+        height:2em;
+        
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){
+    .produtos{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+    width: 90%;}
+    .sobre{
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+        }
+    .sobre-conteudo h3{
+            color: darkgray;
+            text-align: justify;
+            font-size: 1em;
+            font-weight: lighter;
+            padding-top: 2em;
+        }
+        .fundo{
+            background: none;
+         }
+         footer{
+            background-color: white;
+            height:7em;
+            
+        }
+        .produtos-conteudo h4{
+            color: #523320;
+        }
+        .produtos-conteudo{
+            margin-bottom: 3em;}
+
+}
+@media (orientation:landscape) {
+    .produtos{
+        width: 90%;
+    }
+    .sobre{
+        width: 90%;  
+    }
+}
